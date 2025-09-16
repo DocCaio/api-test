@@ -1,0 +1,441 @@
+{
+	"info": {
+		"_postman_id": "294d5c7c-c0ad-44d1-a9d4-b9e437b6d4eb",
+		"name": "Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32969480",
+		"_collection_link": "https://daadddfas.postman.co/workspace/ApiEcommerce~c1336b2b-63f5-4f53-89b8-d834cfce9481/collection/32969480-294d5c7c-c0ad-44d1-a9d4-b9e437b6d4eb?action=share&source=collection_link&creator=32969480"
+	},
+	"item": [
+		{
+			"name": "Buscar",
+			"item": [
+				{
+					"name": "Buscando por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por Tamanho",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarTamanho?tamanho=P",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarTamanho"
+							],
+							"query": [
+								{
+									"key": "tamanho",
+									"value": "P"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por Cor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarCor?cor=Azul",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarCor"
+							],
+							"query": [
+								{
+									"key": "cor",
+									"value": "Azul"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por Nome",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarNome?name=Polo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarNome"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Polo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ordenar Preco",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080 /api/products/ordenar?priceSort=desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080 ",
+							"path": [
+								"api",
+								"products",
+								"ordenar"
+							],
+							"query": [
+								{
+									"key": "priceSort",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por item",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarItem?item=CAMISAS",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarItem"
+							],
+							"query": [
+								{
+									"key": "item",
+									"value": "CAMISAS"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por tipo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarTipo?type=FEMININO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarTipo"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "FEMININO"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando por Item  & tipo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products/buscarItemTipo?item=CAMISAS&type=MASCULINO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"buscarItemTipo"
+							],
+							"query": [
+								{
+									"key": "item",
+									"value": "CAMISAS"
+								},
+								{
+									"key": "type",
+									"value": "MASCULINO"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscando todos os produtos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products?page=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Adicionando Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Camisa Slim Fit Algodão\",\r\n  \"price\": 149.90,\r\n  \"quant\": 80,\r\n  \"item\": \"CAMISA\",\r\n  \"type\": \"MASCULINO\",\r\n  \"sizes\": [\"P\", \"M\", \"G\", \"GG\"],\r\n  \"colors\": [\"branco\", \"azul\", \"preto\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizando Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletando Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Produto Exemplo 01\",\r\n  \"price\": 100.00,\r\n  \"color\": \"Verde\",\r\n  \"size\": \"G\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
